@@ -1,5 +1,5 @@
 .App {
-  width: 50%;
+  width: 85%;
   margin: 30px;
 }
 
@@ -9,19 +9,16 @@
   overflow-y: scroll;
   background-color: #4e9893;
   border-radius: 15px;
-}
-
-.line {
-  margin-top: 10px;
-  display: flex;
+  padding: 20px 5px;
 }
 
 .chat-box {
   background: #f4f1f7;
-  padding: 10px;
-  width: 80%;
+  padding: 12px;
+  width: 60%;
   margin: 15px 10px;
   text-align: left;
+  z-index: 2;
 }
 
 .sendBtn {
@@ -41,8 +38,9 @@
 }
 
 .magicShell {
-  width: 300px;
+  width: 30%;
   position: absolute;
+  z-index: 1;
   margin: 20px;
   pointer-events: none;
   animation: shell-spin 5s; 
