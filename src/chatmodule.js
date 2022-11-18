@@ -1,20 +1,24 @@
-import { Configuration, OpenAIApi } from 'https://cdn.skypack.dev/openai';
+// import { Configuration, OpenAIApi } from "https://cdn.skypack.dev/openai";
 
-function ChatModule(){
-    const configuration = new Configuration({
-        apiKey: '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',
-        });
-    const openai = new OpenAIApi(configuration);
 
-    openai.createCompletion({
-    model: "text-davinci-002",
-    prompt: "hello",
-    temperature: 0.7,
-    max_tokens: 256,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-    }).then((result)=>{console.log(result.data)});
+// const configuration = new Configuration({
+//   apiKey: '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',
+// });
+// const openai = new OpenAIApi(configuration);
+// const ChatMod = (quest) => {
+// openai.createCompletion({
+//   model: "text-davinci-002",
+//   prompt: quest,
+//   temperature: 0.2,
+//   max_tokens: 20,
+//   top_p: 1,
+//   frequency_penalty: 0,
+//   presence_penalty: 0,
+// }).then((result)=>{return(result.data.choices[0].text)});
+// }
+// export default ChatMod;
+
+const ChatMod = (quest) => {
+  return quest
 }
-
-export default ChatModule;
+export default ChatMod;

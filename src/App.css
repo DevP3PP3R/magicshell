@@ -12,13 +12,6 @@
   padding: 20px 5px;
 }
 
-.chat-box {
-  padding: 12px;
-  margin: 10px;
-  text-align: left;
-  z-index: 2;
-}
-
 .input-box {
   background: #f4f1f7;
   color: #0e061f;
@@ -38,18 +31,37 @@
   font-weight: 600;
 }
 
-.mine {
+.chat-box {
+  padding: 12px;
+  margin: 10px 15px 60px 18px;
+  text-align: left;
+  font-size: 18px;
+  position: relative;
+
   border-radius: 5px;
+}
+
+.mine {
   margin-left: auto;
   background-color: #e9dced;
   color: #3a314c;
+  z-index: 2;
+  position: relative;
+}
+
+.answer {
+  margin-right: auto;
+  background-color: #c3b1e8;
+  color: #2b0c34;
+  z-index: 1;
+  position: relative;
 }
 
 .magicShell {
-  width: 40%;
+  width: 50%;
   position: absolute;
-  z-index: 1;
-  margin: 20px;
+  top: 70%;
+  left: 20%;
   pointer-events: none;
   animation: shell-spin 5s; 
   animation-iteration-count: infinite;
