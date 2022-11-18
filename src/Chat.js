@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./App.css";
 import ChatModule from "./chatmodule";
+import shell from "./image/Shell.png"
 
 function Chat() {
     const [msgArr, setMsgArr] = useState([]);
@@ -29,10 +30,11 @@ function Chat() {
     return (
     <div className="App">
         <div className="chat-content">
+        <img src={shell} className="magicShell" alt='magicShell' />
         <ChatBoxMine />
         </div>
         <input className="chat-box" id="input" onChange={handleInputChange} onKeyDown={onKeyDown} value={inputMsg} />
-        <button id="send" onClick={submitMsg}>전송</button>
+        <button className="sendBtn" id="send" onClick={submitMsg}>물어보기</button>
     </div>
   );
 }

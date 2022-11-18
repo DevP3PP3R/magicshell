@@ -7,6 +7,8 @@
 .chat-content {
   height: 350px;
   overflow-y: scroll;
+  background-color: #4e9893;
+  border-radius: 15px;
 }
 
 .line {
@@ -15,13 +17,42 @@
 }
 
 .chat-box {
-  background: #eee;
+  background: #f4f1f7;
   padding: 10px;
-  max-width: 200px;
-  margin: 10px 20px;
+  width: 80%;
+  margin: 15px 10px;
   text-align: left;
 }
 
+.sendBtn {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9787a2;
+  color: #f7fcf6;
+  font-weight: 600;
+}
+
 .mine {
+  border-radius: 5px;
   margin-left: auto;
+  background-color: #e9dced;
+  color: #3a314c;
+}
+
+.magicShell {
+  width: 300px;
+  position: absolute;
+  margin: 20px;
+  pointer-events: none;
+  animation: shell-spin 5s; 
+  animation-iteration-count: infinite;
+  transition: 10s;
+}
+
+
+@keyframes shell-spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
 }
