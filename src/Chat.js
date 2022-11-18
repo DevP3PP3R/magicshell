@@ -9,6 +9,7 @@ function Chat() {
     const handleInputChange =(e) => setInputMsg(e.target.value);
     const submitMsg = () =>{
         var answer = ChatMod(inputMsg);
+        console.log(answer);
         var newChatArr = [...chatArr, inputMsg, answer];
         setChatArr(newChatArr);
         setInputMsg('');
