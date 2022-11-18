@@ -8,7 +8,7 @@ function ChatModule(){
 
     openai.createCompletion({
     model: "text-davinci-002",
-    prompt: "",
+    prompt: "hello",
     temperature: 0.7,
     max_tokens: 256,
     top_p: 1,

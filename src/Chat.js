@@ -12,13 +12,12 @@ function Chat() {
         setMsgArr(newMsgArr);
         setInputMsg('');
     }
-    //ChatModule();
-    const ChatBoxMine = () => {
 
+    const ChatBoxMine = () => {
         const msgValue = msgArr.map((value, index) => (
         <div className="chat-box mine"
             style={{width: `${value.length * 0.7}em`}}
-            id={index}>{value}</div>))
+            key={index}>{value}</div>))
         return(
             <div>
             {msgValue}
@@ -33,7 +32,7 @@ function Chat() {
         <img src={shell} className="magicShell" alt='magicShell' />
         <ChatBoxMine />
         </div>
-        <input className="chat-box" id="input" onChange={handleInputChange} onKeyDown={onKeyDown} value={inputMsg} />
+        <input className="input-box" id="input" onChange={handleInputChange} onKeyDown={onKeyDown} value={inputMsg} />
         <button className="sendBtn" id="send" onClick={submitMsg}>물어보기</button>
     </div>
   );

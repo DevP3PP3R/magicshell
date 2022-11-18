@@ -13,12 +13,20 @@
 }
 
 .chat-box {
-  background: #f4f1f7;
   padding: 12px;
-  width: 60%;
-  margin: 15px 10px;
+  margin: 10px;
   text-align: left;
   z-index: 2;
+}
+
+.input-box {
+  background: #f4f1f7;
+  color: #0e061f;
+  padding: 10px;
+  width: 65%;
+  margin: 20px 5px;
+  text-align: left;
+  font-size: 17px;
 }
 
 .sendBtn {
@@ -38,7 +46,7 @@
 }
 
 .magicShell {
-  width: 30%;
+  width: 40%;
   position: absolute;
   z-index: 1;
   margin: 20px;
@@ -54,3 +62,4 @@
   50% { transform: rotate(5deg); }
   100% { transform: rotate(0deg); }
 }
+
