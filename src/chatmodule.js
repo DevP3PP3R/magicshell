@@ -14,7 +14,8 @@
 //   frequency_penalty: 0,
 //   presence_penalty: 0,
 // }).then((result)=>{
-//   return(result.data.choices[0].text)
+//   console.log(result.data.choices[0].text)
+//   return('testing')
 // });
 // }
 // export default ChatMod;

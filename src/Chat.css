@@ -3,7 +3,6 @@
   margin: 30px;
 }
 
-
 .chat-content {
   height: 350px;
   overflow-y: scroll;
@@ -20,6 +19,7 @@
   margin: 20px 5px;
   text-align: left;
   font-size: 17px;
+  z-index: 3;
 }
 
 .sendBtn {

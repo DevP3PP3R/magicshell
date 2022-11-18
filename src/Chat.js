@@ -18,7 +18,7 @@ function Chat() {
         const chatValue = chatArr.map((value, index) => (
             (index%2===0)
             ?<div className="chat-box answer"
-                style={{width: `${value?value.length * 0.5:1}em`}}
+                style={{width: `${value?value.length * 0.5:0}em`}}
                 key={index}>{value}</div>
             :<div className="chat-box mine"
                 style={{width: `${value.length * 0.5}em`}}
